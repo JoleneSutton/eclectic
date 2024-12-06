@@ -3,8 +3,6 @@
 
 # eclectic <a href="https://jolenesutton.github.io/eclectic/"><img src="man/figures/logo.png" align="right" height="124" alt="eclectic website" /></a>
 
-# eclectic
-
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/JoleneSutton/eclectic/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JoleneSutton/eclectic/actions/workflows/R-CMD-check.yaml)
