@@ -48,4 +48,5 @@ clean_string<-function(x,accents=TRUE,spaces=TRUE,lowercase=TRUE,excess.periods=
       x[index3]<-gsub("\\.","",x[index3],fixed = F)
     }
   }
+  return(x)
 }
