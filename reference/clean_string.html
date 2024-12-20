@@ -76,10 +76,21 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">fake</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'    SOme DATA  here '</span>,<span class="st">'Données'</span>,<span class="st">'n e b'</span>,<span class="st">'A.S.O'</span>,<span class="st">'.cfvn'</span>,<span class="st">'ac.kg.tow'</span>,<span class="st">'gh..kg.tow'</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">clean_string</span><span class="op">(</span><span class="va">fake</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "some.data.here" "donnees"        "neb"            "aso"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "cfvn"           "ac.kg.tow"      "gh.kg.tow"     </span>
 <span class="r-in"><span><span class="fu">clean_string</span><span class="op">(</span><span class="va">fake</span>,accents<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "some.data.here" "données"        "neb"            "aso"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "cfvn"           "ac.kg.tow"      "gh.kg.tow"     </span>
 <span class="r-in"><span><span class="fu">clean_string</span><span class="op">(</span><span class="va">fake</span>,spaces<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "    some data  here " "donnees"              "n e b"               </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "aso"                  "cfvn"                 "ac.kg.tow"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [7] "gh.kg.tow"           </span>
 <span class="r-in"><span><span class="fu">clean_string</span><span class="op">(</span><span class="va">fake</span>,lowercase<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "SOme.DATA.here" "Donnees"        "neb"            "ASO"           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "cfvn"           "ac.kg.tow"      "gh.kg.tow"     </span>
 <span class="r-in"><span><span class="fu">clean_string</span><span class="op">(</span><span class="va">fake</span>,excess.periods<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "some.data.here" "donnees"        "n.e.b"          "a.s.o"         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] ".cfvn"          "ac.kg.tow"      "gh..kg.tow"    </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
