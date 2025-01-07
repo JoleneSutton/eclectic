@@ -8,7 +8,8 @@
 [![R-CMD-check](https://github.com/JoleneSutton/eclectic/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JoleneSutton/eclectic/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-eclectic is an assortment of R functions with broad usage
+**eclectic** is an assortment of new and compiled R functions with broad
+usage
 
 ## Installation
 
