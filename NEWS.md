@@ -1,4 +1,4 @@
-# eclectic (0.0.0.9001)
+# eclectic 0.0.0.9001
 
 * new function: rename_duplicates
 
