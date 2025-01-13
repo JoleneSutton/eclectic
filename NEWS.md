@@ -1,4 +1,6 @@
-# eclectic (development version)
+# eclectic 0.0.0.9002
+
+* Function `find_replace` accepts user defined value for instances in which there is no match
 
 # eclectic 0.0.0.9001
 
