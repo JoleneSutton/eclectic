@@ -1,3 +1,5 @@
+# eclectic (development version)
+
 # eclectic 0.0.0.9001
 
 * new function: rename_duplicates
