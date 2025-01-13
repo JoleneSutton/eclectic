@@ -4,14 +4,16 @@
 \alias{find_replace}
 \title{Find and replace}
 \usage{
-find_replace(original, to.match, to.replace)
+find_replace(original, to.find, to.replace, no.match = "original")
 }
 \arguments{
 \item{original}{The vector to search}
 
-\item{to.match}{A vector that possibly contain matches to original. Must be same length as to.replace}
+\item{to.find}{A vector that possibly contain matches to original. Must be same length as to.replace}
 
-\item{to.replace}{A vector of values to use when a match is found between original and to.match. Must be same length as to.match}
+\item{to.replace}{A vector of values to use when a match is found between original and to.find Must be same length as to.match}
+
+\item{no.match}{User defined value to return where there is no match. Default is to return original value.}
 }
 \value{
 Returns a data frame showing the original vector and the replacement. If no match was found, the original be returned. Both columns are characters.
@@ -25,4 +27,5 @@ original<-c(3,10,3,1,5,2)
 to.find<-c(1,2,3,4)
 to.replace<-c("blue","green","purple","yellow")
 find_replace(original,to.find,to.replace)
+find_replace(original,to.find,to.replace, no.match = 'NA')
 }
