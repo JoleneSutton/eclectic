@@ -12,16 +12,17 @@
 bin_variable<-function(x,bin.width){
   STARTS<-seq(plyr::round_any(min(x), bin.width, floor),max(x),by=bin.width)
   STOPS<-STARTS+bin.width
-  mdpts<-STARTS+(0.5*bin.width)
   LEVELS<-paste0(STARTS,' - ', round(STOPS))
 
-  grp<-NA
-  for(i in 1:length(STARTS)){
-    MID<-mdpts[i]
-    index<-STARTS[i]<=x&x<STOPS[i]
-    grp[index]<-paste0(STARTS[i],' - ', STOPS[i] )}
+  out<-matrix(ncol=2,nrow=length(x))
+  dim(out)
 
-  out<-cbind.data.frame(grp,MID)
+  for(i in 1:length(STARTS)){
+    index<-STARTS[i]<=x&x<STOPS[i]
+    out[index,1]<-paste0(STARTS[i],' - ', STOPS[i] )
+    out[index,2]<-STARTS[i]+(0.5*bin.width)
+  }
+  out<-as.data.frame(out)
   names(out)<-c('bin','bin.midpt')
   out$bin<-factor(out$bin,levels=LEVELS)
   return(out)
