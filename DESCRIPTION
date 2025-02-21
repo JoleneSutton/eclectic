@@ -14,6 +14,7 @@ Imports:
     ggplot2 (>= 3.5.0),
     gtable (>= 0.3.5),
     grid (>= 4.4.0),
+    plyr (>= 1.8.9),
     rstudioapi (>= 0.16.0),
     shiny (>= 1.9.1),
     stringi (>= 1.8.4),
