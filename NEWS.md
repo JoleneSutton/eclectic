@@ -1,4 +1,6 @@
-# eclectic (development version)
+# eclectic 0.0.0.9003
+
+* Updated function `bin_variable`
 
 # eclectic 0.0.0.9002
 
@@ -6,7 +8,7 @@
 
 # eclectic 0.0.0.9001
 
-* new function: rename_duplicates
+* new function: `rename_duplicates`
 
 # eclectic (development version 0.0.0.9000)
 
