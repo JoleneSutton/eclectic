@@ -1,4 +1,6 @@
-# eclectic (development version)
+# eclectic 0.0.0.9004
+
+* New function `grep_any`
 
 # eclectic 0.0.0.9003
 
@@ -10,7 +12,7 @@
 
 # eclectic 0.0.0.9001
 
-* new function: `rename_duplicates`
+* New function: `rename_duplicates`
 
 # eclectic (development version 0.0.0.9000)
 
