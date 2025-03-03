@@ -1,3 +1,5 @@
+# eclectic (development version)
+
 # eclectic 0.0.0.9003
 
 * Updated function `bin_variable`
