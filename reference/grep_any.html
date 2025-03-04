@@ -65,10 +65,9 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">5</span>,<span class="fl">8</span>,<span class="fl">25</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">20</span>,<span class="st">'exact'</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in del/by:</span> non-numeric argument to binary operator</span>
-<span class="r-in"><span><span class="fu">grep_any</span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
+<span class="r-in"><span><span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">20</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">grep_any</span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span>,<span class="st">'exact'</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 2 6 9</span>
 <span class="r-in"><span><span class="va">x</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'4t'</span>,<span class="st">'4r'</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">y</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'3PN'</span>,<span class="st">'4VN'</span>,<span class="st">'4T'</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">grep_any</span><span class="op">(</span><span class="va">x</span>,<span class="va">y</span><span class="op">)</span></span></span>
