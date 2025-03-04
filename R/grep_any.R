@@ -7,8 +7,8 @@
 #' @param ignore.case Ignore case? Default is TRUE
 #' @examples
 #' x<-c(1,5,8,25)
-#' y<-seq(0,20,'exact')
-#' grep_any(x,y)
+#' y<-seq(0,20)
+#' grep_any(x,y,'exact')
 #' x<-c('4t','4r')
 #' y<-c('3PN','4VN','4T')
 #' grep_any(x,y)
