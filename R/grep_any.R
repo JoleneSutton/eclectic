@@ -2,12 +2,12 @@
 #'
 #' Apply `grep` to a pattern that can be comprised of multiple elements.
 #' @param x A vector of elements to search for
-#' @param y A vector to search withing
+#' @param y A vector to search within
 #' @param match Either 'any', 'exact' or 'begins'. Default is 'any'.
 #' @param ignore.case Ignore case? Default is TRUE
 #' @examples
 #' x<-c(1,5,8,25)
-#' y<-seq(0,20)
+#' y<-seq(0,20,'exact')
 #' grep_any(x,y)
 #' x<-c('4t','4r')
 #' y<-c('3PN','4VN','4T')

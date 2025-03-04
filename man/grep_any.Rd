@@ -9,7 +9,7 @@ grep_any(x, y, match = "any", ignore.case = TRUE)
 \arguments{
 \item{x}{A vector of elements to search for}
 
-\item{y}{A vector to search withing}
+\item{y}{A vector to search within}
 
 \item{match}{Either 'any', 'exact' or 'begins'. Default is 'any'.}
 
@@ -20,7 +20,7 @@ Apply \code{grep} to a pattern that can be comprised of multiple elements.
 }
 \examples{
 x<-c(1,5,8,25)
-y<-seq(0,20)
+y<-seq(0,20,'exact')
 grep_any(x,y)
 x<-c('4t','4r')
 y<-c('3PN','4VN','4T')
