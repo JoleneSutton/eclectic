@@ -3,6 +3,7 @@
 export(bin_variable)
 export(clean_string)
 export(click_graph)
+export(count_na)
 export(find_replace)
 export(grep_any)
 export(make_cols)

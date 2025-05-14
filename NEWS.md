@@ -1,3 +1,7 @@
+# eclectic 0.0.0.9005
+
+* New function `count_na`
+
 # eclectic 0.0.0.9004
 
 * New function `grep_any`
