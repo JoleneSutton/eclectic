@@ -15,7 +15,8 @@ search_files(pattern, files)
 Returns names of files whose text contains a pattern
 }
 \examples{
-#files<-list.files(path="...",full.names=TRUE)
+#files<-list.files(path="...",full.names=TRUE, recursive = TRUE)
+#files<-files[grep('.R',files)]
 #search_files('some text',files)
 }
 \seealso{

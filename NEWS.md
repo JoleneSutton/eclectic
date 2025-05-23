@@ -1,3 +1,7 @@
+# eclectic 0.0.0.9006
+
+* Correction made to function `search_files`
+
 # eclectic 0.0.0.9005
 
 * New function `count_na`

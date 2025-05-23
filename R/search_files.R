@@ -5,7 +5,8 @@
 #' @param files Text files to search (e.g., .R, .txt...)
 #' @seealso readLines, grep
 #' @examples
-#' #files<-list.files(path="...",full.names=TRUE)
+#' #files<-list.files(path="...",full.names=TRUE, recursive = TRUE)
+#' #files<-files[grep('.R',files)]
 #' #search_files('some text',files)
 #' @export
 search_files<-function(pattern,files){
@@ -16,7 +17,7 @@ search_files<-function(pattern,files){
   for(i in 1:length(files)){
     scrub<-suppressWarnings(grep(pattern, readLines(paste0("",files[i])), value = TRUE))
     out<-sub('\\.*$', '', basename(files[i]))
-    if(length(scrub>0)){my.list[[i]]<-out}
+    if(length(scrub)>0){my.list[[i]]<-out}
   }
 
   if(length(my.list)>0){
