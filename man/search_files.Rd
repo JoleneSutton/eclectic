@@ -4,12 +4,14 @@
 \alias{search_files}
 \title{Search for a pattern within text files}
 \usage{
-search_files(pattern, files)
+search_files(pattern, files, return.path = FALSE)
 }
 \arguments{
 \item{pattern}{Case sensitive pattern to look for}
 
 \item{files}{Text files to search (e.g., .R, .txt...)}
+
+\item{return.path}{Include full file name path? Logical. Default is FALSE}
 }
 \description{
 Returns names of files whose text contains a pattern

@@ -1,3 +1,8 @@
+# eclectic 0.0.0.9007
+
+* Added option to return full file path in function `search_files`
+
+
 # eclectic 0.0.0.9006
 
 * Correction made to function `search_files`
