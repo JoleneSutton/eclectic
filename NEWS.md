@@ -1,3 +1,7 @@
+# eclectic 0.0.0.9008
+
+* New function: `split_on_delimiter`
+
 # eclectic 0.0.0.9007
 
 * Added option to return full file path in function `search_files`
